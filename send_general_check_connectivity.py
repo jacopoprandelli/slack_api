@@ -1,6 +1,7 @@
 from slackclient import SlackClient
+import os
 
-SLACK_TOKEN='insert-here-slack-token'
+SLACK_TOKEN = os.environ.get('SLACK_TOKEN')
 
 slack_client = SlackClient(SLACK_TOKEN)
 
